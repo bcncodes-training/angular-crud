@@ -1,8 +1,0 @@
-<ul *ngFor="let user of users">
-  <li><a [routerLink]="['/users', user.id]">{{user.name}}</a>
-      <button (click)='deleteUser(user.id)'>delete</button>
-  </li>
-</ul>
-
-<button mat-button [routerLink]="['/newUser']">Nuevo usuario</button>
-
