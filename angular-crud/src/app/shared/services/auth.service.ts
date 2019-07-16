@@ -21,7 +21,7 @@ export class AuthService {
 
   registerUser(name: string, email: string, password: string) {
     //const url_api = 'http://localhost:3000/register';
-    this.authURL += '/register';
+    this.authURL += 'register';
     return this.http
       .post<UserInterface>(
         this.authURL,
@@ -39,7 +39,7 @@ export class AuthService {
 
   loginuser(email: string, password: string): Observable<any> {
     //const url_api = 'http://localhost:3000/login';
-    this.authURL += '/login';
+    this.authURL += 'login';
     return this.http
       .post<UserInterface>(
         this.authURL,
